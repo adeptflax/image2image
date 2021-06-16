@@ -16,9 +16,12 @@ pip3 install -r requirements.txt
 It's transforming "X" data into "Y" data
 
 > ds/x/train/
-ds/x/validation/
-ds/y/train/
-ds/y/validation/
+> 
+> ds/x/validation/
+> 
+> ds/y/train/
+> 
+> ds/y/validation/
 
 ### Creates a list of training data and puts it into text file.
 
