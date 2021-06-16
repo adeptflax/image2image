@@ -5,6 +5,7 @@ This repo should work, If you have any problems or questions, please open an iss
 
 ### Install the python requirements
 I used python 3.8.5 and I used a rtx 3090 to train the model. 
+
 ```bash
 pip3 install -r requirements.txt
 
@@ -13,6 +14,7 @@ pip3 install -r requirements.txt
 ### You will need the following directory stucture for training data:
 
 It's transforming "X" data into "Y" data
+
 > ds/x/train/
 ds/x/validation/
 ds/y/train/
@@ -26,9 +28,10 @@ mkdir -p $HOME/.cache/autoencoders/data/ILSVRC2012_validation/
 
 !ls -d $PWD/ds/y/validation/* > $HOME/.cache/autoencoders/data/ILSVRC2012_validation/filelist.txt
 !ls -d $PWD/ds/y/train/* > $HOME/.cache/autoencoders/data/ILSVRC2012_train/filelist.txt
+```
 
 ### Change the config
-The code only supports square input and output data. Someone should probably figure out how to make it support non-sqaure data. You should probably change all instances of "512" with the resolution of your dataset in "configs/imagenet_vqgan.yaml".
+The code only supports square input and output data. Someone should probably figure out how to make it support non-square data. You should probably change all instances of "512" with the resolution of your dataset in "configs/imagenet_vqgan.yaml".
 
 ```bash
 python3 main.py --base configs/imagenet_vqgan.yaml -t True --gpus 0,
