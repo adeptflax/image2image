@@ -2,6 +2,7 @@ I created to this repo to do image2image translation with [CompVis/taming-transf
 
 This repo should work, If you have any problems or questions, please open an issue and I will try to help you. I don't have any plans of mantaining this repo. If want to make changes please open an issue and I will link to it here. 
 
+The run.ipynb notebook can run the image2image model.
 
 ### Install the python requirements
 I used python 3.8.5 and I used a rtx 3090 to train the model. 
